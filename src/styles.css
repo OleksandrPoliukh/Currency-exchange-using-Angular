@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+/* Apply a background color to the entire application */
+body {
+  background-color: #e0dede; /* Light gray background color */
+  color: #333; /* Dark text color for better readability */
+}

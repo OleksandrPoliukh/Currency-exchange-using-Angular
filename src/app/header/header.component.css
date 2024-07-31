@@ -1,0 +1,60 @@
+header {
+  background-color: #333;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+h1 {
+  color: cyan;
+  margin: 0;
+}
+
+.rates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.currency-rate {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .rates {
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 0;
+  }
+
+  .currency-rate {
+    text-align: right;
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 405px) {
+  header {
+    align-items: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .currency-rate {
+    text-align: center;
+  }
+}

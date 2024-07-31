@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="currency-converter">
+    <div class="currency-input left">
+      <input type="number" [(ngModel)]="firstAmount" (ngModelChange)="onFirstAmountChange()" />
+      <select [(ngModel)]="firstCurrency" (change)="onFirstCurrencyChange()">
+        <option *ngFor="let currency of currencies" [value]="currency">{{ currency }}</option>
+      </select>
+    </div>
+
+    <div class="currency-input right">
+      <input type="number" [(ngModel)]="secondAmount" (ngModelChange)="onSecondAmountChange()" />
+      <select [(ngModel)]="secondCurrency" (change)="onSecondCurrencyChange()">
+        <option *ngFor="let currency of currencies" [value]="currency">{{ currency }}</option>
+      </select>
+    </div>
+  </div>
+</div>
