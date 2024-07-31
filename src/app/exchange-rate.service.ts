@@ -32,6 +32,9 @@ export class ExchangeRateService {
             } else if (item.currencyCodeA === 840 && item.currencyCodeB === 978) {
               rates['USD']['EUR'] = item.rateBuy || item.rateCross;
               rates['EUR']['USD'] = 1 / (item.rateBuy || item.rateCross);
+            } else if (item.currencyCodeA === 978 && item.currencyCodeB === 840) {
+              rates['EUR']['USD'] = item.rateBuy || item.rateCross;
+              rates['USD']['EUR'] = 1 / (item.rateBuy || item.rateCross);
             }
           });
 
